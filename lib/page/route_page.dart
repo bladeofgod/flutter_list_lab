@@ -5,6 +5,8 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:flutterlistlab/page/position_list.dart';
+
 
 class RoutePage extends StatefulWidget{
   @override
@@ -23,10 +25,14 @@ class RoutePageState extends State<RoutePage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
+              SizedBox(
+                height: 100,width: 1,
+              ),
 
               RaisedButton(
                 onPressed: (){
                   //todo
+                  Navigator.of(context).push(new MaterialPageRoute(builder: (ctx)=>PositionListPage()));
                 },
                 child: Text('position list page'),
               ),
