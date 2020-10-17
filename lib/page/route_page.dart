@@ -7,6 +7,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutterlistlab/page/position_list.dart';
 
+import 'normal_list.dart';
+
 
 class RoutePage extends StatefulWidget{
   @override
@@ -43,6 +45,7 @@ class RoutePageState extends State<RoutePage> {
               RaisedButton(
                 onPressed: (){
                   //todo
+                  Navigator.of(context).push(new MaterialPageRoute(builder: (ctx)=>ListPage()));
                 },
                 child: Text('normal list page'),
               ),
