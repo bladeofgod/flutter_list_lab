@@ -6,6 +6,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutterlistlab/page/position_list.dart';
+import 'package:flutterlistlab/page/sliver_list.dart';
 
 import 'normal_list.dart';
 
@@ -48,6 +49,17 @@ class RoutePageState extends State<RoutePage> {
                   Navigator.of(context).push(new MaterialPageRoute(builder: (ctx)=>ListPage()));
                 },
                 child: Text('normal list page'),
+              ),
+              SizedBox(
+                height: 50,width: 1,
+              ),
+
+              RaisedButton(
+                onPressed: (){
+                  //todo
+                  Navigator.of(context).push(new MaterialPageRoute(builder: (ctx)=>SliverListPage()));
+                },
+                child: Text('sliver list page'),
               ),
             ],
           ),
